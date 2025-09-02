@@ -164,7 +164,6 @@ function App() {
           
           <div className="text-center">
             <div className="text-8xl mb-6 animate-bounce" style={{ animationDuration: '3s' }}>{currentRole.emoji}</div>
-            <h2 className="text-3xl font-semibold bg-gradient-to-r from-yellow-200 to-amber-200 bg-clip-text text-transparent mb-4">Role Hari Ini</h2>
             <h2 className="text-3xl font-semibold bg-gradient-to-r from-yellow-200 to-amber-200 bg-clip-text text-transparent mb-4">Today's Role</h2>
             <div className={`text-7xl font-bold text-yellow-400 mb-6 drop-shadow-2xl animate-pulse`}>
               {currentRole.name}
