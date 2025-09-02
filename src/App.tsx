@@ -92,23 +92,6 @@ function App() {
     return previous;
   };
 
-  const formatDate = (date: Date): string => {
-    return new Intl.DateTimeFormat('en-US', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }).format(date);
-  };
-
-  const formatShortDate = (date: Date): string => {
-    return new Intl.DateTimeFormat('en-US', {
-      weekday: 'short',
-      month: 'short',
-      day: 'numeric'
-    }).format(date);
-  };
-
   const currentRole = getCurrentRole();
   const upcomingRoles = getUpcomingRoles();
   const previousRoles = getPreviousRoles();
