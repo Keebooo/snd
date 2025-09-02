@@ -165,6 +165,7 @@ function App() {
           <div className="text-center">
             <div className="text-8xl mb-6 animate-bounce" style={{ animationDuration: '3s' }}>{currentRole.emoji}</div>
             <h2 className="text-3xl font-semibold bg-gradient-to-r from-yellow-200 to-amber-200 bg-clip-text text-transparent mb-4">Role Hari Ini</h2>
+            <h2 className="text-3xl font-semibold bg-gradient-to-r from-yellow-200 to-amber-200 bg-clip-text text-transparent mb-4">Today's Role</h2>
             <div className={`text-7xl font-bold text-yellow-400 mb-6 drop-shadow-2xl animate-pulse`}>
               {currentRole.name}
             </div>
@@ -174,7 +175,7 @@ function App() {
             <div className="mt-8 flex items-center justify-center">
               <div className="bg-gradient-to-r from-black/60 to-gray-900/60 backdrop-blur-sm rounded-full px-8 py-3 flex items-center border border-yellow-500/40 shadow-xl shadow-yellow-500/40 ring-2 ring-yellow-400/40 hover:ring-yellow-300/60 transition-all duration-300">
                 <RotateCcw className="w-5 h-5 mr-3 text-yellow-400 animate-spin" style={{ animationDuration: '3s' }} />
-                <span className="text-yellow-200 font-semibold">Reset otomatis setiap hari jam 00:00 WIB</span>
+                <span className="text-yellow-200 font-semibold">Automatically resets daily</span>
               </div>
             </div>
           </div>
@@ -184,7 +185,7 @@ function App() {
           {/* Previous Roles */}
           <div className={`bg-gradient-to-br from-gray-900/80 to-black/70 backdrop-blur-sm rounded-2xl shadow-2xl shadow-yellow-500/30 p-6 border border-yellow-600/40 ring-2 ring-yellow-400/50 transition-all duration-1000 hover:shadow-yellow-500/50 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="flex items-center mb-6">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Riwayat Role</h3>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Role History</h3>
             </div>
             <div className="space-y-3">
               {previousRoles.map((item, index) => (
@@ -211,7 +212,7 @@ function App() {
           {/* Upcoming Roles */}
           <div className={`bg-gradient-to-br from-gray-900/80 to-black/70 backdrop-blur-sm rounded-2xl shadow-2xl shadow-amber-500/30 p-6 border border-amber-600/40 ring-2 ring-amber-400/50 transition-all duration-1000 hover:shadow-amber-500/50 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="flex items-center mb-6">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">Jadwal Mendatang</h3>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">Upcoming Schedule</h3>
             </div>
             <div className="space-y-3">
               {upcomingRoles.map((item, index) => (
@@ -230,7 +231,7 @@ function App() {
                   <div className="text-amber-600">
                     {index === 0 && (
                       <span className="text-xs bg-gradient-to-r from-yellow-500/40 to-amber-500/40 text-yellow-200 px-3 py-1 rounded-full font-bold border border-yellow-400/60 shadow-lg shadow-yellow-500/40 animate-pulse">
-                        Besok
+                        Tomorrow
                       </span>
                     )}
                   </div>
@@ -242,7 +243,7 @@ function App() {
 
         {/* Role Legend */}
         <div className={`mt-12 bg-gradient-to-br from-gray-900/80 to-black/70 backdrop-blur-sm rounded-2xl shadow-2xl shadow-yellow-500/30 p-8 border border-yellow-600/40 ring-2 ring-yellow-400/50 transition-all duration-1000 hover:shadow-yellow-500/50 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h3 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent mb-8 text-center">Semua Role</h3>
+          <h3 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent mb-8 text-center">All Roles</h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {roles.map((role, index) => (
               <div key={index} className={`bg-gradient-to-br from-gray-800/70 to-gray-900/50 border-yellow-600/30 rounded-xl p-6 text-center border backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-yellow-500/50 hover:ring-2 hover:ring-yellow-400/60 shadow-lg shadow-yellow-500/20 group cursor-pointer`}>
@@ -264,7 +265,7 @@ function App() {
           {/* Build by and Social Links */}
           <div className="mt-8 space-y-6">
             <p className="text-lg">
-              Build by <span className="font-bold bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">XBerry</span>
+              Built by <span className="font-bold bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">XBerry</span>
             </p>
               
             <div className="flex items-center justify-center space-x-8">
