@@ -174,7 +174,7 @@ function App() {
             <div className="mt-8 flex items-center justify-center">
               <div className="bg-gradient-to-r from-black/60 to-gray-900/60 backdrop-blur-sm rounded-full px-8 py-3 flex items-center border border-yellow-500/40 shadow-xl shadow-yellow-500/40 ring-2 ring-yellow-400/40 hover:ring-yellow-300/60 transition-all duration-300">
                 <RotateCcw className="w-5 h-5 mr-3 text-yellow-400 animate-spin" style={{ animationDuration: '3s' }} />
-                <span className="text-yellow-200 font-semibold">Automatically resets daily</span>
+                <span className="text-yellow-200 font-semibold">Resets daily at 5 PM UTC</span>
               </div>
             </div>
           </div>
