@@ -90,7 +90,7 @@ function App() {
   };
 
   const formatDate = (date: Date): string => {
-    return new Intl.DateTimeFormat('id-ID', {
+    return new Intl.DateTimeFormat('en-US', {
       weekday: 'long',
       year: 'numeric',
       month: 'long',
@@ -99,7 +99,7 @@ function App() {
   };
 
   const formatShortDate = (date: Date): string => {
-    return new Intl.DateTimeFormat('id-ID', {
+    return new Intl.DateTimeFormat('en-US', {
       weekday: 'short',
       month: 'short',
       day: 'numeric'
@@ -153,7 +153,7 @@ function App() {
           <p className="text-gray-300 text-xl font-serif bg-gradient-to-r from-yellow-300 to-amber-300 bg-clip-text text-transparent">Role Rotation Monitor</p>
           <div className="flex items-center justify-center mt-4 text-yellow-300 bg-gray-900/50 backdrop-blur-sm rounded-full px-4 py-2 border border-yellow-500/30">
             <Clock className="w-4 h-4 mr-2" />
-            <span className="font-mono">{currentTime.toLocaleTimeString('id-ID')}</span>
+            <span className="font-mono">{currentTime.toLocaleTimeString('en-US')}</span>
           </div>
         </div>
 
